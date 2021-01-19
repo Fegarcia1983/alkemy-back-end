@@ -1,27 +1,26 @@
 const express = require('express');
 const router = express.Router();
-const apiRegisters = require('../../controllers/api/registersApiController');
+const apiCategories = require('../../controllers/api/categoriesApiController');
 
 /*=====================================
 =>             GET ROUTES            <=
 =====================================*/
-router.get('/registers', apiRegisters.listFilters);
-router.get('/', apiRegisters.list);
+router.get('/', apiCategories.list);
 
 
 /*=====================================
 =>            POST ROUTES            <=
 =====================================*/
-router.post('/', apiRegisters.create);
+// router.post('/', apiCategories.create);
 
 /*=====================================
 =>             PUT ROUTES            <=
 =====================================*/
-router.put('/:id', apiRegisters.update);
+// router.put('/:id', apiCategories.update);
 
 /*=====================================
 =>           DELETE ROUTES           <=
 =====================================*/
-router.delete('/:id', apiRegisters.delete);
+// router.delete('/:id', apiCategories.delete);
 
 module.exports = router;

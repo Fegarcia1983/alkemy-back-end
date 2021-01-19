@@ -3,9 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var ApiRegistersRouter = require('./routes/APIroutes/APIregisters');
+var ApiCategoriesRouter = require('./routes/APIroutes/APIcategories');
+
 
 var app = express();
 
@@ -18,9 +21,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 app.use('/', indexRouter);
-app.use('/api/registers', ApiRegistersRouter),
+app.use('/api/registers', ApiRegistersRouter);
+app.use('/api/categories', ApiCategoriesRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
