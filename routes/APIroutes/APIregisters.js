@@ -6,6 +6,7 @@ const apiRegisters = require('../../controllers/api/registersApiController');
 =>             GET ROUTES            <=
 =====================================*/
 router.get('/registers', apiRegisters.listFilters);
+router.get('/:id', apiRegisters.updateForm)
 router.get('/', apiRegisters.list);
 
 

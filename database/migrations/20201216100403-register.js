@@ -23,7 +23,7 @@ module.exports = {
         allowNull: false,
         unique: false
       },
-      mount: {
+      amount: {
         type: Sequelize.DOUBLE.UNSIGNED,
         allowNull: false
       },

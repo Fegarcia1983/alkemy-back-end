@@ -27,7 +27,7 @@ module.exports = (sequelize, types) => {
             allowNull: false,
             unique: false
         },
-        mount: {
+        amount: {
             type: types.DOUBLE,
             allowNull: false,
             unSigned: true

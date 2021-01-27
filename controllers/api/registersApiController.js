@@ -29,9 +29,9 @@ const apiRegisters = {
          let totalAmount = 0;
          registers.rows.forEach(row => {
             if(row.dataValues.in_out) {
-               totalAmount += row.dataValues.mount
+               totalAmount += row.dataValues.amount
             }else{
-               totalAmount -= row.dataValues.mount
+               totalAmount -= row.dataValues.amount
             }
          })
          let registersJSON = {
@@ -69,7 +69,7 @@ const apiRegisters = {
          in_out: req.body.in_out,
          date: req.body.date,
          concept: req.body.concept,
-         mount: req.body.mount,
+         amount: req.body.amount,
          category_id: req.body.category_id
       })
       .then(created => {
@@ -119,9 +119,9 @@ const apiRegisters = {
          let totalAmount = 0;
          registers.rows.forEach(row => {
             if(row.dataValues.in_out) {
-               totalAmount += row.dataValues.mount
+               totalAmount += row.dataValues.amount
             }else{
-               totalAmount -= row.dataValues.mount
+               totalAmount -= row.dataValues.amount
             }
          })
          let registersJSON = {
@@ -147,9 +147,68 @@ const apiRegisters = {
          res.json(showError)
       });
    },
+   updateForm: (req, res) => {
+      db.Registers.findByPk(req.params.id, {
+         include: [{
+            association: `categories`
+         }]
+      })
+      .then((register) => {
+         let registerJSON = {
+            meta: {
+               status: 200,
+            },
+            data: register,
+         }
+         res.json(registerJSON)
+      })
+      .catch(error => {
+         let showError = {
+            meta: {
+               status: 404
+            },
+            data: {
+               errorName: error.name,
+               errorCode: error.parent.errno
+            }
+         }
+         res.json(showError)
+      });
+   },
 
    update: (req, res) => {
-     res.status(200).json({ id: 1, name: 'PUT' });
+     db.Registers.update({
+      date: req.body.date,
+      concept: req.body.concept,
+      amount: req.body.amount,
+      category_id: req.body.category_id
+     },
+     {
+        where:{
+           id: req.params.id
+        }
+     })
+     .then(updated => {
+      let updatedJSON = {
+         meta: {
+            status: 201
+         },
+         data: updated
+      }
+      res.json(updatedJSON);
+      })
+      .catch(error => {
+         let showError = {
+            meta: {
+               status: 404
+            },
+            data: {
+               errorName: error.name,
+               errorCode: error.parent.errno
+            }
+         }
+         res.json(showError)
+      });
    },
 
    delete: async (req, res) => {

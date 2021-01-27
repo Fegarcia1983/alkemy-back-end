@@ -8,7 +8,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -18,7 +18,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -28,7 +28,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -38,7 +38,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -48,7 +48,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -58,7 +58,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -68,7 +68,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -78,7 +78,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -88,7 +88,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -98,7 +98,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -108,7 +108,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -118,7 +118,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -128,7 +128,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -138,7 +138,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -148,7 +148,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -158,7 +158,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -168,7 +168,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -178,7 +178,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -188,7 +188,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
@@ -198,7 +198,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -208,7 +208,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -218,7 +218,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 3,
       created_at: new Date(),
       updated_at: new Date()
@@ -228,7 +228,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 2,
       created_at: new Date(),
       updated_at: new Date()
@@ -238,7 +238,7 @@ module.exports = {
       in_out: faker.random.boolean(),
       date: faker.date.between('1983-11-03', '2020-12-31'),
       concept: faker.commerce.productName(),
-      mount: faker.commerce.price(20,1000.0),
+      amount: faker.commerce.price(20,1000.0),
       category_id: 1,
       created_at: new Date(),
       updated_at: new Date()
